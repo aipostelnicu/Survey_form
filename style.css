@@ -1,0 +1,95 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+ font-family: 'Popins', sans-serif;
+ font-size: 100%;
+ color: rgb(255, 245, 238);
+ text-shadow: 1px 2px 2px black;
+ letter-spacing: 1.5px;
+ background-image: 
+   url(https://images.unsplash.com/photo-1627389955800-4afab384df17?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1934&q=80);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0;
+  background-attachment: fixed;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(140, 140, 217, 0.5);
+}
+#title {
+  margin-top: 60px;
+  font-size: 50px;
+}
+
+#description {
+  font-size: 18px;
+  text-align: center;
+}
+
+form {
+  display: block;
+  padding: 10px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  border-radius: 3px;
+}
+
+p, label {
+  font-weight: bold;
+}
+
+.form-fields {
+  display: flex;
+  flex-direction: column;
+  margin: 5px auto 15px auto;
+  
+}
+
+.form-input {
+  width: 600px;
+  height: 40px;
+  margin: 5px auto 15px auto;
+  display: block;
+  background-color: #FFF5EE;
+  border: none;
+  border-radius: 3px;
+}
+
+.input-radio,
+.input-checkbox {
+  display: inline;
+  margin-right: 10px; 
+  margin-top: 5px;
+}
+
+#textarea-label {
+  margin-top: 15px;
+}
+ 
+#submit {
+  box-shadow:inset 0px 1px 0px 0px #a4e271;
+	background:linear-gradient(to bottom, #89c403 5%, #77a809 100%);
+	background-color:#89c403;
+  border:1px solid #74b807;
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: bold;
+  text-shadow:0px 1px 0px #528009;
+}
+
+#submit:hover {
+	background:linear-gradient(to bottom, #77a809 5%, #89c403 100%);
+	background-color:#77a809;
+}
+#submit:active {
+	position:relative;
+	top:1px;
+}

@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./style.css">
+    <title>Survey form</title>
+  </head>
+  <body>
+    <div class="container">
+    <h1 id="title">Customer Service Survey Form</h1>
+    <p id="description"><em>Our company's objectives is to prvide superior levels of customer service.<br> Your feedback will tell us what needs improvement and how we can better serve you.</em></p>
+    <form id="survey-form" action="example.php" method="GET" target="_blank">
+      <div class="form-fields">
+      <label for="name" id="name-label">Name
+        <input type="text" id="name" name="fullname" placeholder="Enter your full name" required class="form-input">
+      </label>
+      </div>
+      <div class="form-fields">
+       <label for="email" id="email-label">Email
+        <input type="email" id="email" name="email" placeholder="Enter your email" required class="form-input">
+      </label>
+      </div>
+      <div class="form-fields">
+      <label for="number" id="number-label">Age
+        <input type="number" id="number" name="age" min="18" max="65" placeholder="Enter your age" required class="form-input">
+      </label>
+      </div>
+      <div class="form-fields">
+        <p>Choose your type of contract</p>
+        <select id="dropdown" name="client-type" class="form-input">
+          <option value="regular client" >Regular client</option>
+          <option value="start-up">Start-up</option>
+          <option value="company">Company</option>
+          <option value="ngo">NGO</option>
+          <option value="government">Government</option>
+        </select>
+        </div>
+      <div class="form-fields">
+      </label>
+      <p>Please tell us what you wish to improve?</p>
+        <label for="chat">
+          <input id="chat" name="improvement1" value="chat" type="checkbox" class="input-checkbox">Communication through chat</label>
+        <label for="email-handling">
+          <input id="email-handling" name="improvement2" value="email" type="checkbox" class="input-checkbox">Faster email handling</label>
+        <label for="phone">
+          <input id="phone" name="improvement3" value="phone" type="checkbox" class="input-checkbox">Rapid phone answer</label>
+        <label for="remote">
+          <input id="remote" name="improvement4" value="remote" type="checkbox" class="input-checkbox">Remote sessions</label>
+        <label for="videos">
+          <input id="videos" name="improvement5" value="videos" type="checkbox" class="input-checkbox">Training through videos</label>
+        <label for="documentation">
+          <input id="documentation" name="improvement6" value="documentation" type="checkbox" class="input-checkbox">More technical documentation</label> 
+      </div>
+      <div class="form-fields">
+      <p>Would you recommend us to a friend?</p>
+      <label for="recommendation-yes">
+        <input id="recommendation-yes" name="recommendation" value="yes" type="radio" class="input-radio">Yes
+      </label>
+        <label for="recommendation-no">
+        <input id="recommendation-no" name="recommendation" value="no" type="radio" class="input-radio">No
+      </label>
+        <label for="recommendation-maybe">
+        <input id="recommendation-maybe" name="recommendation" value="maybe" type="radio" class="input-radio">Maybe
+      </label>
+     </div> 
+     <div class="form-fields">
+     <label for="multiple_data" id="textarea-label">Insert here any comments or suggestions for us:
+      <br>    
+      <textarea id="multiple-data" name="comments" class="form-input"></textarea>
+      </label>  
+      <br>    
+      <button type="submit" id="submit" class="form-input">Send feedback</button>
+      </form>
+      </div>    
+      </div>    
+  </body>
+</html>
+
